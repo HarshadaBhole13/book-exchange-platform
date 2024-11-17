@@ -41,7 +41,7 @@ Testing - Postman
 How to Run the Project
 
 Backend
-Navigate to the backend directory:bash cd book-exchange-backend  
+Navigate to the backend directory:  cd book-exchange-backend  
 Build and run the Spring Boot application: mvn spring-boot:run
 
 Ensure the MySQL database is running.  Use the database name: book_exchange.
@@ -49,11 +49,11 @@ Ensure the MySQL database is running.  Use the database name: book_exchange.
 
 Frontend
 
-Navigate to the frontend directory:                                                                                             cd book-exchange-frontend
+Navigate to the frontend directory: cd book-exchange-frontend
 
-Install dependencies:                                                                                                               npm install
+Install dependencies: npm install
 
-Start the React development server:                                                           npm start
+Start the React development server: npm start
 
 Setup & Configuration
 
