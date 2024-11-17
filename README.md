@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+Book lovers often accumulate books they’ve read and are eager to explore new reading material. Traditional methods of book exchanges, such as local swaps or lending among friends, are limited in scope and accessibility. This project aims to develop a full-stack web application to serve as a centralised platform for book exchanges, enabling users to trade, lend, and borrow books efficiently.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+User Authentication
+Secure registration and login system.
+Password encryption and recovery options.
+Users can manage their accounts and log out.
+User and change there password, if forget 
 
-## Available Scripts
+Book Listing
+Users can list books with details such as:
+Title
+Author
+Genre
+Condition
+Availability status
+Options to edit or delete listings.
 
-In the project directory, you can run:
+Book Search
+Advanced search and filtering features to find books based on:
+Title, Author, Genre, Location, and Availability.
+Paginated or incremental loading of results.
 
-### `npm start`
+Exchange Requests
+Users can send, receive, and negotiate exchange requests.
+Notifications for request status (Pending, Accepted, Rejected, Modified).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+User Profiles
+Users can maintain profiles with:
+Reading preferences.
+Favorite genres.
+Books they own or wish to acquire.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Tech Stack
+Frontend: React.js
+Backend: Spring Boot with Hibernate
+Database: MySQL
+Testing - Postman 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+How to Run the Project
 
-### `npm run build`
+Backend
+Navigate to the backend directory:bash cd book-exchange-backend  
+Build and run the Spring Boot application: mvn spring-boot:run
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ensure the MySQL database is running.  Use the database name: book_exchange.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Frontend
 
-### `npm run eject`
+Navigate to the frontend directory:                                                                                             cd book-exchange-frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install dependencies:                                                                                                               npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the React development server:                                                           npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Setup & Configuration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Create a MySQL database named book_exchange.
+Configure the database connection in application.properties
 
-## Learn More
+spring.datasource.url=jdbc:mysql://localhost:3306/book_exchange
+spring.datasource.username=<your-username>
+spring.datasource.password=<your-password>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+SMTP for Notifications
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Update application.properties for email configuration:
 
-### Code Splitting
+spring.mail.host=smtp.wilp.bits-pilani.ac.in
+spring.mail.port=587
+spring.mail.username=<your-email>
+spring.mail.password=<your-password>
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Contact
+For queries, contact:
+Name:Harshada Anil Bhole
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
